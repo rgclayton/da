@@ -1,7 +1,4 @@
 mountpoints:
   /:
-    url: https://content.da.live/adobe/da-live/
+    url: https://content.da.live/rgclayton/da/
     type: markup
-
-folders:
-  /app/: /apps/custom/shell

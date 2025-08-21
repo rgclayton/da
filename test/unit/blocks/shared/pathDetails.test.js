@@ -166,13 +166,13 @@ describe('Path details', () => {
   describe('Expected null results', () => {
     it('Handles no path details', () => {
       const details = getPathDetails();
-      expect(details).to.equal(null);
+      expect(details).to.equal(undefined);
     });
 
     it('Handles hash from IMS', () => {
       const loc = { pathname: '/', hash: '#old_hash' };
       const details = getPathDetails(loc);
-      expect(details).to.equal(null);
+      expect(details).to.equal(undefined);
     });
   });
 });

@@ -17,7 +17,15 @@ describe('Browse', () => {
     const fetchedArgs = [];
     const mockFetch = async (url, opts) => {
       fetchedArgs.push({ url, opts });
-      return { ok: true, json: async () => ({}) };
+      return {
+        ok: true,
+        json: async () => ({}),
+        headers: {
+          get: () => {
+
+          },
+        },
+      };
     };
 
     const item = {
